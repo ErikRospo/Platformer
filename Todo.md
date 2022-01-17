@@ -1,0 +1,11 @@
+-- add html
+-- add canvas
+-- add javascript
+-- add css
+-- add images
+-- add interactivity
+-- add debug checks
+-- add sfx
+-- add collision checking
+-- add colision to charachter
+-- DEBUG (this will never **truly** be done)
