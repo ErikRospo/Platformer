@@ -7,5 +7,7 @@
 -- add debug checks
 -- add sfx
 -- add collision checking
--- add colision to charachter
+    -- add colision to char
+    -- add colision to enemies
+    -- add colision to platforms
 -- DEBUG (this will never **truly** be done)

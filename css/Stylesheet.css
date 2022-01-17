@@ -5,3 +5,6 @@ p {
     color: lightslategray;
     font-family: Arial, Helvetica, sans-serif;
 };
+#game_canvas {
+    background-color: darkslateblue;
+}
