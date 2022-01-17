@@ -1,13 +1,27 @@
--- add html
--- add canvas
--- add javascript
--- add css
 -- add images
+    --add player images
+    --add background images
 -- add interactivity
+    --add keyboard interactivity
+        -- check for mouse focus to input keypresses
 -- add debug checks
 -- add sfx
--- add collision checking
-    -- add colision to char
-    -- add colision to enemies
-    -- add colision to platforms
+    -- music
+    -- click sound
+    -- death sound
+    -- enemy sound
+-- add main menu
+    -- level select
+    -- settings
+        -- volume, ect.
+--add a better background on landing page.
+--add a unique mechanic
+    --ideas:
+        --you can only press buttons a certain number of times
+--add enemies
+    -- add enemy AI
+    -- add enemy hp
+    -- allow enemies to attack player
+        -- allow enemies to damage player
+    -- add images to them
 -- DEBUG (this will never **truly** be done)

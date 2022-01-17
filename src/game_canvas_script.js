@@ -3,7 +3,7 @@ var ctx = canvas.getContext("2d");
 var level = 0;
 class platform extends component {
     constructor(width, height, color, x, y) {
-        platform.call(width, height, color, x, y);
+        platform=new component(width,height,color,x,y)
         this.tag = "platform";
     }
 }

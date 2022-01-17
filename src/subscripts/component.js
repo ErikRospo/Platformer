@@ -6,6 +6,7 @@ class component {
         this.speedY = 0;
         this.x = x;
         this.y = y;
+        this.tag="Empty";
         this.color = color;
         this.context = ctx;
         this.context.fillstyle = this.color;
