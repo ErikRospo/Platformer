@@ -1,10 +1,10 @@
 body {
-    background-color: darkslategrey;
+    background-color: rgb(0, 34, 34);
 };
 p {
     color: lightslategray;
     font-family: Arial, Helvetica, sans-serif;
 };
 #game_canvas {
-    background-color: darkslateblue;
+    background-color: rgb(24, 14, 83);
 }
