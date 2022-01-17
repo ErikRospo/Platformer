@@ -1,16 +1,14 @@
 var canvas = document.getElementById("game_canvas");
 var ctx = canvas.getContext("2d");
-var level=0;
+var level = 0;
 class component {
-    constructor(width, height, color, x, y, sX, sY) {
+    constructor(width, height, color, x, y) {
         this.width = width;
         this.height = height;
         this.speedX = 0;
         this.speedY = 0;
         this.x = x;
         this.y = y;
-        this.startingX = sX;
-        this.startingY = sY;
         this.color = color;
         this.context = ctx;
         this.context.fillstyle = this.color;
@@ -45,14 +43,14 @@ class component {
     }
 };
 class player extends component {
-    constructor(width, height, color, x, y, sX, sY) {
-        player.call(width, height, color, x, y, sX, sY);
+    constructor(width, height, color, x, y) {
+        player.call(width, height, color, x, y);
         this.tag = "Player";
-        
-        this.update= function () {
-            this.context=ctx;
-            this.context.fillRect=this.color;
-            this.context.fillRect(this.x,this.y,this.width,this.height);
+
+        this.update = function () {
+            this.context = ctx;
+            this.context.fillRect = this.color;
+            this.context.fillRect(this.x, this.y, this.width, this.height);
         }
     }
 }
@@ -63,15 +61,15 @@ class platform extends component {
     }
 }
 class enemy extends component {
-    constructor(width, height, color, x, y, sX, sY) {
-        enemy.call(width, height, color, x, y, sX, sY);
+    constructor(width, height, color, x, y) {
+        enemy.call(width, height, color, x, y);
         this.tag = "Enemy";
     }
 }
-class EndPoint extends platform {
-    constructor(width,height,color,x,y,sX,sY) {
-        EndPoint.call(width,height,color,x,,y,sX,sY);
-        this.tag="EndPoint";
+class EndPoint extends component {
+    constructor(width, height, color, x, y) {
+        EndPoint.call(width, height, color, x, y);
+        this.tag = "EndPoint";
     }
 }
 function start() {
@@ -80,8 +78,13 @@ function start() {
     createComponents();
 };
 function createComponents() {
-    if level==0;
-        new platform(50,10, "green",0,10)
+    var components = [];
+    if (level == 0); {
+        const platform1 = new platform(50, 10, "green", 0, 10)
+        components += platform1
+        const playerc = new player(5, 10, "blue", 10, 20)
+        components += playerc
+    };
 }
 function updateEvents() {
 
