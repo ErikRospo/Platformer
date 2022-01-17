@@ -7,4 +7,5 @@ p {
 };
 #game_canvas {
     background-color: rgb(24, 14, 83);
+    color: gray;
 }
