@@ -22,10 +22,16 @@ class EndPoint extends component {
 function start() {
     canvas.width = 480;
     canvas.height = 270;
+    var statuscode=56
     var components = createComponents();
     while ((statuscode != 0) || (statuscode != 1)) {
-        var statuscode = updateEvents(components);
+        statuscode = updateEvents(components);
     };
+    if (statuscode==0) {
+        console.log("you won!");
+    } else if (statuscode==1){
+        console.log("you lost.\n:(")
+    }
 };
 function createComponents() {
     var components = [];
