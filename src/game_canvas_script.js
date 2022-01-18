@@ -41,9 +41,11 @@ function createComponents() {
     level = level % maxLevels
     const playerc = new player(5, 10, "blue", 10, 20)
     if (level == 0); {
-        const platform1 = new platform(50, 10, "linear-gradient(90deg, #00f800 0%, #964b00 27%)", 0, 10)
+        const platform1 = new platform(50, 10, "green", 0, 30)
+        console.log(platform1);
         components += platform1
         const playerc = new player(5, 10, "blue", 10, 20)
+        console.log(playerc);
         components += playerc
     }
     return components, playerc
