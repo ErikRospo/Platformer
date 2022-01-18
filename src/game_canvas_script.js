@@ -83,4 +83,4 @@ function updateEvents(components, playerV) {
 function clear() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 };
-onload(start());
+start();
