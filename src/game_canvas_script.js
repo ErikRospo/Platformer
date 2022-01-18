@@ -1,7 +1,7 @@
 var canvas = document.getElementById("game_canvas");
 var ctx = canvas.getContext("2d");
 var level = 0;
-var maxLevels = 1
+var maxLevels = 1;
 class platform extends immovableComponent {
     constructor(width, height, color, x, y) {
         super(width, height, color, x, y);
@@ -23,9 +23,9 @@ class EndPoint extends immovableComponent {
 function start() {
     canvas.width = 480;
     canvas.height = 270;
-    var statuscode = 2
+    var statuscode = 1
     var components = createComponents();
-    while ((statuscode != 0) || (statuscode != 1)) {
+    while ((statuscode != 0) | (statuscode != 1)) {
         statuscode = updateEvents(components);
     };
     if (statuscode == 0) {
@@ -74,6 +74,8 @@ function updateEvents(components, playerV) {
             if (CollisionArray[3]) {
                 p.speedX = 0
             };
+        } else if (t == "player") {
+            p.update()
         }
     }
 };
