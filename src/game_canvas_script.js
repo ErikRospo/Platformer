@@ -25,7 +25,8 @@ function start() {
     canvas.height = 270;
     var statuscode = 1
     var components = createComponents();
-    while ((statuscode != 0) | (statuscode != 1)) {
+    //while ((statuscode != 0) | (statuscode != 1)) {
+    for (let i = 0; i < 100; i++) {
         statuscode = updateEvents(components);
     };
     if (statuscode == 0) {
