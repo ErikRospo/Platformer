@@ -28,6 +28,6 @@ Will I finish this? maybe, maybe not. but I sure as hell will try.
 7. add main menu
     1. level select
     2. settings
-        1. volume, ect.
+        1. volume, etc.
 8. add a better background on landing page.
 9. DEBUG (this will never **truly** be done)
