@@ -15,6 +15,7 @@ Will I finish this? maybe, maybe not. but I sure as hell will try.
 3. add a unique mechanic
     1. ideas:
         1. you can only press buttons a certain number of times
+        2. each level, you have to play through the past ~2-5 levels, but you get op gear to beat them.
 4. add images
     1. add player images
     2. add background images

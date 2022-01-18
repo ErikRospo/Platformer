@@ -2,11 +2,9 @@ class component {
     constructor(width, height, color, x, y) {
         this.width = width;
         this.height = height;
-        this.speedX = 0;
-        this.speedY = 0;
         this.x = x;
         this.y = y;
-        this.tag="Empty";
+        this.tag="empty";
         this.color = color;
         this.context = ctx;
         this.context.fillstyle = this.color;
@@ -15,10 +13,6 @@ class component {
             this.context = ctx;
             this.context.fillstyle = this.color;
             this.context.fillRect(this.x, this.y, this.width, this.height);
-        };
-        this.Start = function () {
-            this.x = this.startingX;
-            this.y = this.startingY;
         };
         this.crashWith = function (otherobj) {
             var myleft = this.x;
