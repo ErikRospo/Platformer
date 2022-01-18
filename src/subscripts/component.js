@@ -4,7 +4,7 @@ class component {
         this.height = height;
         this.x = x;
         this.y = y;
-        this.tag="empty";
+        this.tag = "empty";
         this.color = color;
         this.context = ctx;
         this.context.fillstyle = this.color;
