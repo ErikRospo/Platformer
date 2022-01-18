@@ -7,7 +7,7 @@ class movableComponent extends component {
             this.x += this.speedX;
             this.y += this.speedY;
             this.context = ctx;
-            this.context.fillstyle = this.color;
+            this.context.fillStyle = this.color;
             this.context.fillRect(this.x, this.y, this.width, this.height);
         };
     }

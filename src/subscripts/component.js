@@ -7,11 +7,11 @@ class component {
         this.tag = "empty";
         this.color = color;
         this.context = ctx;
-        this.context.fillstyle = this.color;
+        this.context.fillStyle = this.color;
         this.context.fillRect(this.x, this.y, this.width, this.height);
         this.update = function () {
             this.context = ctx;
-            this.context.fillstyle = this.color;
+            this.context.fillStyle = this.color;
             this.context.fillRect(this.x, this.y, this.width, this.height);
         };
         this.crashWith = function (otherobj) {

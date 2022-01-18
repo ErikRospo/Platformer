@@ -7,7 +7,7 @@ class player extends movableComponent {
         this.update = function () {
             this.speedY -= this.gravity / 10
             this.context = ctx;
-            this.context.fillstyle = this.color;
+            this.context.fillStyle = this.color;
             this.context.fillRect(this.x, this.y, this.width, this.height);
         };
         this.onW = function () {
