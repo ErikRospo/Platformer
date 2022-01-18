@@ -2,24 +2,6 @@ var canvas = document.getElementById("game_canvas");
 var ctx = canvas.getContext("2d");
 var level = 0;
 var maxLevels = 1;
-class platform extends immovableComponent {
-    constructor(width, height, color, x, y) {
-        super(width, height, color, x, y);
-        this.tag = "platform";
-    }
-}
-class enemy extends movableComponent {
-    constructor(width, height, color, x, y) {
-        super(width, height, color, x, y);
-        this.tag = "enemy";
-    }
-}
-class EndPoint extends immovableComponent {
-    constructor(width, height, color, x, y) {
-        super(width, height, color, x, y);
-        this.tag = "endpoint";
-    }
-}
 function start() {
     canvas.width = 480;
     canvas.height = 270;
@@ -39,14 +21,25 @@ function start() {
 function createComponents() {
     var components = [];
     level = level % maxLevels
-    const playerc = new player(5, 10, "blue", 10, 20)
-    if (level == 0); {
-        const platform1 = new platform(50, 10, "green", 0, 30)
-        console.log(platform1);
-        components += platform1
-        const playerc = new player(5, 10, "blue", 10, 20)
-        console.log(playerc);
-        components += playerc
+    switch (level) {
+        case 0:
+            const platform1 = new platform(50, 10, "brown", 0, 30)
+            console.log(platform1);
+            components += platform1
+            const playerc = new player(5, 10, "blue", 10, 20)
+            console.log(playerc);
+            components += playerc
+            break;
+        case 1:
+            const platform1 = new platform(50, 10, "brown", 0, 30)
+            console.log(platform1);
+            components += platform1
+            const playerc = new player(5, 10, "blue", 10, 20)
+            console.log(playerc);
+            components += playerc
+            break
+        default:
+            break;
     }
     return components, playerc
 }
