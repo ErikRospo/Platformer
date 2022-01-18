@@ -1,5 +1,4 @@
 # Platformer game thing.
-<<<<<<< HEAD
 Will I finish this? maybe, maybe not. but I sure as hell will try.
 ##todo
 1. add interactivity
@@ -32,8 +31,3 @@ Will I finish this? maybe, maybe not. but I sure as hell will try.
         1. volume, etc.
 8. add a better background on landing page.
 9. DEBUG (this will never **truly** be done)
-=======
-Will I finish this? maybe, maybe not. but I sure as hell will try.  
-##todo: see projects
-
->>>>>>> c015ee79a4215c3560182e7a25d2dcdec62be90e
