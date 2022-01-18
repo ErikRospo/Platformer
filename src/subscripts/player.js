@@ -1,6 +1,6 @@
 class player extends movableComponent {
     constructor(width, height, color, x, y) {
-        player.call(width, height, color, x, y);
+        super(width, height, color, x, y);
         this.tag = "player";
         this.sensitivity = 1;
         this.update = function () {

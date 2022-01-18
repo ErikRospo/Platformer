@@ -1,6 +1,6 @@
 class movableComponent extends component {
     constructor(width, height, color, x, y) {
-        movableComponent = new component(width, height, color, x, y);
+        super(width, height, color, x, y);
         this.speedX = 0;
         this.speedY = 0;
         this.update = function () {

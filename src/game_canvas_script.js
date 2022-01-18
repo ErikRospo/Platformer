@@ -4,19 +4,19 @@ var level = 0;
 var maxLevels = 1
 class platform extends immovableComponent {
     constructor(width, height, color, x, y) {
-        platform = new immovableComponent(width, height, color, x, y)
+        super(width, height, color, x, y);
         this.tag = "platform";
     }
 }
 class enemy extends movableComponent {
     constructor(width, height, color, x, y) {
-        enemy = new movableComponent(width, height, color, x, y)
+        super(width, height, color, x, y);
         this.tag = "enemy";
     }
 }
 class EndPoint extends immovableComponent {
     constructor(width, height, color, x, y) {
-        EndPoint = new immovableComponent(width, height, color, x, y)
+        super(width, height, color, x, y);
         this.tag = "endpoint";
     }
 }
