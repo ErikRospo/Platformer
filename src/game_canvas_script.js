@@ -38,6 +38,7 @@ function start() {
 function createComponents() {
     var components = [];
     level = level % maxLevels
+    const playerc = new player(5, 10, "blue", 10, 20)
     if (level == 0); {
         const platform1 = new platform(50, 10, "linear-gradient(90deg, #00f800 0%, #964b00 27%)", 0, 10)
         components += platform1
@@ -48,7 +49,7 @@ function createComponents() {
 }
 function updateEvents(components, playerV) {
     var p = playerV
-    for (let i = 0; i < components.length(); i++) {
+    for (let i = 0; i < components.length; i++) {
         var c = components[i];
         var t = c.tag;
         if (t == "endpoint") {
